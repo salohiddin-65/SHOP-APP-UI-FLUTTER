@@ -10,7 +10,7 @@ class ProductTitleWithImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: kDefaultPaddin),
+      padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -25,7 +25,7 @@ class ProductTitleWithImage extends StatelessWidget {
                 .titleLarge!
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
           ),
-          SizedBox(height: kDefaultPaddin),
+          SizedBox(height: kDefaultPadding),
           Row(
             children: <Widget>[
               RichText(
@@ -43,7 +43,7 @@ class ProductTitleWithImage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(width: kDefaultPaddin),
+              SizedBox(width: kDefaultPadding),
               Expanded(
                 child: Hero(
                   tag: "${product.id}",

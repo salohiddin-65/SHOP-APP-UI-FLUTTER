@@ -63,8 +63,8 @@ class ColorDot extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(
-        top: kDefaultPaddin / 4,
-        right: kDefaultPaddin / 2,
+        top: kDefaultPadding / 4,
+        right: kDefaultPadding / 2,
       ),
       padding: EdgeInsets.all(2.5),
       height: 24,

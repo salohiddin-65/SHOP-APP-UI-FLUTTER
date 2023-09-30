@@ -39,7 +39,7 @@ class DetailsScreen extends StatelessWidget {
             icon: SvgPicture.asset("assets/icons/cart.svg"),
             onPressed: () {},
           ),
-          SizedBox(width: kDefaultPaddin / 2)
+          SizedBox(width: kDefaultPadding / 2)
         ],
       ),
       body: SingleChildScrollView(
@@ -53,8 +53,8 @@ class DetailsScreen extends StatelessWidget {
                     margin: EdgeInsets.only(top: size.height * 0.3),
                     padding: EdgeInsets.only(
                       top: size.height * 0.12,
-                      left: kDefaultPaddin,
-                      right: kDefaultPaddin,
+                      left: kDefaultPadding,
+                      right: kDefaultPadding,
                     ),
                     // height: 500,
                     decoration: BoxDecoration(
@@ -67,11 +67,11 @@ class DetailsScreen extends StatelessWidget {
                     child: Column(
                       children: <Widget>[
                         ColorAndSize(product: product),
-                        SizedBox(height: kDefaultPaddin / 2),
+                        SizedBox(height: kDefaultPadding / 2),
                         Description(product: product),
-                        SizedBox(height: kDefaultPaddin / 2),
+                        SizedBox(height: kDefaultPadding / 2),
                         CounterWithFavBtn(),
-                        SizedBox(height: kDefaultPaddin / 2),
+                        SizedBox(height: kDefaultPadding / 2),
                         AddToCart(product: product)
                       ],
                     ),
